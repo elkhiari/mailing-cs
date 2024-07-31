@@ -106,7 +106,7 @@ class Mail
             SmtpClient smtp = new SmtpClient("smtp.gmail.com")
             {
                 Port = 587,
-                Credentials = new NetworkCredential("elkhiariothmane@gmail.com", "jyyjtsgsyilbdefw"),
+                Credentials = new NetworkCredential("elkhiariothmane@gmail.com", "!!"),
                 EnableSsl = true
             };
 
@@ -156,8 +156,8 @@ class Program
     {
         List<string> mails = new List<string>
         {
-            "nizarbouali@gmail.com",
-            "nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com","nizarbouali@gmail.com",
+            "ftlibft@gmail.com",
+            "ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com","ftlibft@gmail.com",
         };
 
         await Mail.SendMailConcurrentlyForLargeAsync(mails, "Test", "Test", 10);
